@@ -1,0 +1,15 @@
+﻿@{
+    var Products = (List<ProductModel>)ViewData["Product"];
+    var id = (int)ViewData["id"];
+}
+
+<ol>
+    @foreach (var Product in Products)
+    {
+        if (id == Product.id)
+        {
+            <li>Product ID : @Product.id , Product Name :  @Product.Name , Product Price :  @Product.Price</li>
+        }
+
+    }
+</ol>
