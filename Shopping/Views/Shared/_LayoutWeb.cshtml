@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/Style.css" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <a class="navbar-brand text-uppercase  Home-nav " href="/">Coffee Store</a>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto ">
+
+                    <li class="nav-item">
+                        <a class="nav-link Products-nav" href="/Products">Products</a>
+                    </li>
+                    <li class="nav-item  nav-clor">
+                        <a class="nav-link why-nav" href="#section-2">Why Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link contact-nav" href="#section-3">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        @RenderBody()
+    </div>
+
+   
+
+    <footer class="footer">
+        <p>&copy; 2021  COFFEE STORE</p>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+</body>
+</html>

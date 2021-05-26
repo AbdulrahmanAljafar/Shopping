@@ -40,3 +40,4 @@ C:\Users\abdul\OneDrive\سطح المكتب\.net\Shopping\Shopping\obj\Debug\net
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Shopping\Shopping\obj\Debug\net5.0\Shopping.csproj.CopyComplete
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Shopping\Shopping\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
 C:\Users\abdul\OneDrive\سطح المكتب\.net\Shopping\Shopping\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\abdul\OneDrive\سطح المكتب\.net\Shopping\Shopping\obj\Debug\net5.0\Razor\Views\Shared\_LayoutWeb.cshtml.g.cs

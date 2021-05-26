@@ -2,20 +2,49 @@
 @{ 
     var Products = (List<ProductModel>)ViewData["Product"];
     var id = (int)ViewData["id"];
+    var color = ViewData["color"];
+    Layout = "_LayoutWeb";
 }
 
-<ol>
+
+<table class="table" style="width:100%;text-align:center;background-color:@color">
+    <thead>
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Image </th>
+            <th scope="col">Product page </th>
+        </tr>
+    </thead>
     @foreach (var Product in Products)
     {
         if (id == Product.id)
         {
-            <li>Product ID : @Product.id , Product Name :  @Product.Name , Product Price :  @Product.Price</li>
+            <tr>
+                <th scope="row">@Product.id</th>
+                <td>@Product.Name</td>
+                <td>@Product.Price</td>
+                <td><img src=@Product.image width="200px" height="200px" /></td>
+            </tr>
         }
         else if (id == -1)
         {
-            <li>Product ID : @Product.id , Product Name :  @Product.Name , Product Price :  @Product.Price</li>
+
+
+
+            <tr>
+                <th scope="row">@Product.id</th>
+                <td>@Product.Name</td>
+                <td>@Product.Price</td>
+                <td><img src=@Product.image width="200px" height="200px" /></td>
+                <td><a href="/Products/Details/@Product.id"><button type="button" class="btn btn-outline-secondary">@Product.Name Details </button></a></td>
+            </tr>
+
+
         }
 
 
     }
-</ol>
+</table>
+    

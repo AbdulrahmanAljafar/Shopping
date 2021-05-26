@@ -3,13 +3,31 @@
     var id = (int)ViewData["id"];
 }
 
-<ol>
+
+
+    <table class="table" style="width:100%;text-align:center;">
+    <thead>
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Image </th>
+            
+        </tr>
+    </thead>
     @foreach (var Product in Products)
     {
         if (id == Product.id)
         {
-            <li>Product ID : @Product.id , Product Name :  @Product.Name , Product Price :  @Product.Price</li>
+            <tr>
+                <th scope="row">@Product.id</th>
+                <td>@Product.Name</td>
+                <td>@Product.Price</td>
+                <td><img src=@Product.image width="200px" height="200px" /></td>
+            </tr>
         }
+           
 
-    }
-</ol>
+
+        }
+    </table>
